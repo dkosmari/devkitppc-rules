@@ -5,7 +5,7 @@ _PATCH	:= 1
 FILES	:=	base_rules base_tools gamecube_rules wii_rules
 
 all:
-	@echo "use dist or install targets"
+	$(error use dist or install targets)
 
 install:
 	@cp -v $(FILES) $(DESTDIR)$(DEVKITPRO)/devkitPPC
